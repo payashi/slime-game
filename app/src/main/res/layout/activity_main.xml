@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.slime.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/back"
+        android:src="@drawable/main2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/tCount"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:layout_marginTop="155sp"
+        android:paddingLeft="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Normal Slime"
+        android:id="@+id/tName"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slime"
+        android:src="@drawable/s1_1"
+        android:layout_alignTop="@+id/tName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time:10"
+        android:id="@+id/tTime"
+        android:textSize="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/slime" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tBest"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/tTime"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/tTime"
+        android:textSize="40dp"
+        android:text="Best:" />
+
+</RelativeLayout>
